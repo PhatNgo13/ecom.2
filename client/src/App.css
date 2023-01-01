@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "MyAppFont";
+  src: url("../public/Space\ Mono\ Bold.ttf") format("truetype");
+}
+
+/* :root{
+  --primary-bg-color: #5A5A5A,
+  --secondary-color: #DEDEDE,
+  --accent-color: #DEDEDE,
+  --background-color: #000000
+}; */
+.logo {
+  width: 20rem;
+}
+.bi,
+.navbar-toggler-icon {
+  color: #dedede;
+  font-size: xx-large;
+  outline: none;
+}
+button:focus {
+  color: transparent;
+}
+.navbar {
+  /*   z-index should be above .close-navbar-toggler */
+  z-index: 2;
+}
+.close-navbar-toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.close-navbar-toggler.collapsed {
+  z-index: -1;
+}
+nav,
+footer {
+  background-color: #000000;
+  color: #dedede;
+}
+a.link {
+  color: #dedede;
+  text-decoration: none;
+  background-color: transparent;
+}
+a.link:hover {
+  opacity: 50%;
+}
+button.btn:hover {
+  background-color: transparent;
+  border-color: #dedede;
+}
+button.btn {
+  background-color: transparent;
+  border: black 1px solid;
+}
+button.btn:focus{
+  color: #dedede
+} 
+.card-image {
+  width: fit-content;
+}
+.carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 5s ease-in-out left;
+    -moz-transition: 5s ease-in-out left;
+    -o-transition: 5s ease-in-out left;
+    transition: 5s ease-in-out left;
+}
+img.img {
+  height: 300px;
+  opacity: 30%;
+  transition: transform 2s;
+  margin-bottom: 200px;
+  filter: blur(4px);
+}
+img.img:hover {
+  height: 300px;
+  opacity: 100%;
+  transform: scale(2);
+  filter: none;
+  -webkit-box-shadow: 0px 0px 200px 300px rgba(0,0,0,0.30);
+-moz-box-shadow: 0px 0px 200px 300px rgba(0,0,0,0.30);
+box-shadow: 0px 0px 200px 300px rgba(0,0,0,0.30);
+}
+
+img.input{
+  height: 300px;
+}

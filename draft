@@ -1,0 +1,101 @@
+// import React from 'react'
+// import { useEffect } from 'react';
+// import { useState } from 'react';
+// import axios from "axios"
+
+// const Albums = () => {
+//     const [albums, setAlbums] = useState([])
+
+//     useEffect(() => {
+//         const fetchAllAlbums = async () => {
+//             try {
+//                 const res = await axios.get("http://localhost:4000/albums");
+//                 setAlbums(res.data);
+//                 console.log(res);
+//             } catch (err) {
+//                 console.log(err)
+//             }
+//         }
+//         fetchAllAlbums()
+//     }, []);
+
+// }
+
+// export default Albums
+
+{
+  /* <div className="container py-5 my-5">
+  <h1>Albums</h1>
+  <div className="albums">
+    {albums.map((album) => (
+      <div className="album" key={album.id}>
+        <div className="col">
+          <div className="card">
+            <img src={album.albumCover} className="card-img-top" />
+            <div className="card-body text-center py-2">
+              <h1 className="card-title">{album.albumName}</h1>
+              <h2>{album.albumArtist}</h2>
+              <h5>{album.albumGenre}</h5>
+              <h3 className="card-subtitle">${album.albumPrice}</h3>
+              <p>{album.albumDesc}</p>
+              <a href="#!" class="btn btn-primary">
+                Button
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>; */
+}
+
+
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
+
+// const ProductCarousel = () => {
+//   const [albums, setAlbums] = useState([]);
+
+//   useEffect(() => {
+//     const fetchAllalbums = async () => {
+//       try {
+//         const res = await axios.get("http://localhost:4000/albums");
+//         setAlbums(res.data);
+//       } catch (err) {
+//         console.log(err);
+//       }
+//     };
+//     fetchAllalbums();
+//   }, []);
+
+//   return (
+//     <div className="container">
+//       {albums.map((album) => (
+//         <div key={album.id}>
+//           <div className="swiper-container">
+//             <div className="swiper-wrapper">
+//               <div className="swiper-slide">
+//                 <div className="videobox">
+//                   <video
+//                     autoPlay
+//                     muted=""
+//                     loop=""
+//                     id="preview"
+//                     className="video"
+//                     controls=""
+//                   >
+//                     <source src={album.albumPreview} type="video/mp4" />
+//                   </video>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       ))}
+//       ;
+//     </div>
+//   );
+// };
+
+// export default ProductCarousel;
