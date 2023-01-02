@@ -43,9 +43,9 @@ app.get("/albums", (req, res) => {
   });
 });
 
-app.use(express.static(path.join("../client", "./build")));
+app.use(express.static(path.join(__dirname, "./client", "./build")));
 app.use((req, res) => {
-  res.sendFile(path.join("../client", "./build", "index.html"));
+  res.sendFile(path.join(__dirname, "./client", "./build", "index.html"));
 });
 
 // app.get("/rap", (req, res) => {
