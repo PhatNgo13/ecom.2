@@ -11,9 +11,22 @@ const db = mysql.createConnection({
   database: "ecom",
 });
 
+db.connect((err) => {
+  if (err) {
+    console.log(`Can't connect to database`, err);
+    return;
+  }
+  console.log(`Connected to database`);
+});
+
 //USING CORS TO MAKE CROSS ORIGIN REQUEST. USE FOR FETCHING DATA FROM DIFFERENT DOMAINS.
 app.use(express.json());
 app.use(cors());
+
+//TEST SEND
+app.get("/", (req, res) => {
+  res.send("Connected to the server");
+});
 
 //SEND DATA TO THE FRONTEND
 app.get("/albums", (req, res) => {
