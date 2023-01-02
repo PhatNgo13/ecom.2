@@ -1,7 +1,12 @@
-import express from "express";
-import mysql from "mysql";
-import cors from "cors";
-import path from "path"
+// import express from "express";
+// import mysql from "mysql";
+// import cors from "cors";
+// import path from "path"
+
+const express = require("express");
+const mysql = require('mysql');
+const cors = require('cors');
+const path = require('path');
 
 //MAKING CONNECTION WITH MYSQL DATABASE
 const app = express();
@@ -25,9 +30,9 @@ app.use(express.json());
 app.use(cors());
 
 //TEST SEND
-app.get("/", (req, res) => {
-  res.send("Connected to the server");
-});
+// app.get("/", (req, res) => {
+//   res.send("Connected to the server");
+// });
 
 //SEND DATA TO THE FRONTEND
 app.get("/albums", (req, res) => {
@@ -38,9 +43,9 @@ app.get("/albums", (req, res) => {
   });
 });
 
-app.use(express.static(path.join(__dirname, "./client", "./build")));
+app.use(express.static(path.join("../client", "./build")));
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "./client", "./build", "index.html"));
+  res.sendFile(path.join("../client", "./build", "index.html"));
 });
 
 // app.get("/rap", (req, res) => {
