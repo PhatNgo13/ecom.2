@@ -35,7 +35,7 @@ app.use(cors());
 // });
 
 //SEND DATA TO THE FRONTEND
-app.get("/albums", (req, res) => {
+app.get("/all/albums", (req, res) => {
   const q = "SELECT * FROM album";
   db.query(q, (err, data) => {
     if (err) console.log(err);

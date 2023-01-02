@@ -13,7 +13,7 @@ const InputForm = () => {
                 alt="location image"
               />
             </div>
-            <div className="col-sm-7">
+            <div className="col-md-7">
               <div className="card-body">
                 <h3 className="card-title pb-3">Come visit me</h3>
                 <p>21 Park Ln Cir, North York, ON M3B 1Z8, Canada.</p>

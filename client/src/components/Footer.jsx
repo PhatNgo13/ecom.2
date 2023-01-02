@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="w-100 py-4 flex-shrink-0">
-      <div className="container py-4">
+    <footer className="w-100 py-5 ">
+      <div className="container py-5 my-2">
         <div className="row gy-4 gx-5 d-flex justify-content-evenly">
           <div className="col-lg-4 col-md-6">
             <h5 className="h1 text-white">JT</h5>
@@ -18,6 +18,7 @@ export default function Footer() {
               &copy; Copyrights. All rights reserved.
             </p>
           </div>
+          <br/>
           <div className="col-lg-2 col-md-6">
             <h5 className="text-white mb-3">Quick links</h5>
             <ul className="list-unstyled text-muted">
@@ -27,7 +28,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="link" to="/albums">
+                <Link className="link" to="/shop">
                   Shop
                 </Link>
               </li>

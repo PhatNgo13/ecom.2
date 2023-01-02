@@ -19,24 +19,24 @@ const Filter = ({ setActive, active, setFiltered, albums }) => {
 
   //BUTTON WITH THE ONCLICK EVENT TO CHANGE THE ACTIVE STATE TO WHICH EVER GENRE YOU WANT TO FILTER.
   return (
-    <div className="filter-container pt-5 d-flex justify-content-end">
-      <button className="btn px-4 mx-2" onClick={() => setActive("*")}>
+    <div className="filter-container pt-5 d-flex justify-content-center">
+      <button className="btn px-2 mx-2" onClick={() => setActive("*")}>
         All
       </button>
-      <button className="btn px-4 mx-2" onClick={() => setActive("R&B/Soul")}>
+      <button className="btn px-2 mx-2" onClick={() => setActive("R&B/Soul")}>
         R&B/Soul
       </button>
-      <button className="btn px-4 mx-2" onClick={() => setActive("Pop")}>
+      <button className="btn px-2 mx-2" onClick={() => setActive("Pop")}>
         Pop
       </button>
       <button
-        className="btn px-4 mx-2"
+        className="btn px-2 mx-2"
         onClick={() => setActive("Hip-Hop/Rap")}
       >
         Rap
       </button>
       <button
-        className="btn px-4 mx-2"
+        className="btn px-2 mx-2"
         onClick={() => setActive("Alternative")}
       >
         Alternative

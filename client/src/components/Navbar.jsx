@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="link" to="/albums" style={{ color: "#DEDEDE" }}>
+              <Link className="link" to="/shop" style={{ color: "#DEDEDE" }}>
                 Shop
               </Link>
             </li>

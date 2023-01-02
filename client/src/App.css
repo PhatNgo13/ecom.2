@@ -3,6 +3,9 @@
   src: url("../public/Space\ Mono\ Bold.ttf") format("truetype");
 }
 
+body{
+  background-color: #000000;
+}
 /* :root{
   --primary-bg-color: #5A5A5A,
   --secondary-color: #DEDEDE,

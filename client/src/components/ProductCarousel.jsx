@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProductCarousel = () => {
   return (
-    <div>
+    <div className="container-fluid p-0 pt-5">
       <div
         id="carouselCaptions"
         className="carousel slide"
@@ -72,7 +72,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/h&vpreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/5h&v.png"
@@ -89,7 +89,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/allapreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/16alla.png"
@@ -106,7 +106,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/spreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/3s.jpeg"
@@ -123,7 +123,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/hlpreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/2hl.png"
@@ -140,7 +140,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/widopreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-md-block">
+            <div className="carousel-caption ">
               <Link to="/albums">
                 <img
                   src="image/19wido.jpeg"
@@ -157,7 +157,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/dfmpreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/12dfm.jpeg"
@@ -174,7 +174,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/hohpreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/18hoh.jpeg"
@@ -191,7 +191,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="d-block w-100">
               <source src="video/twtaspreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/20twtas.png"
@@ -208,7 +208,7 @@ const ProductCarousel = () => {
             <video autoPlay muted loop className="video d-block w-100">
               <source src="video/uspreview.mp4" type="video/mp4" />
             </video>
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption">
               <Link to="/albums">
                 <img
                   src="image/6us.png"
