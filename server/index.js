@@ -1,6 +1,7 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
+import path from "path"
 
 //MAKING CONNECTION WITH MYSQL DATABASE
 const app = express();
@@ -10,7 +11,7 @@ const db = mysql.createConnection({
   password: "1878",
   database: "ecom",
 });
-
+//TEST MYSQL CONNECTION
 db.connect((err) => {
   if (err) {
     console.log(`Can't connect to database`, err);
@@ -35,6 +36,11 @@ app.get("/albums", (req, res) => {
     if (err) console.log(err);
     res.send(data);
   });
+});
+
+app.use(express.static(path.join(__dirname, "./client", "./build")));
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "./client", "./build", "index.html"));
 });
 
 // app.get("/rap", (req, res) => {
