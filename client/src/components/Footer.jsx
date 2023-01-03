@@ -14,11 +14,8 @@ export default function Footer() {
               Dive deeper into Johnson's taste. All genre. All platform. Updated
               monthly.
             </p>
-            <p className="small mb-0">
-              &copy; Copyrights. All rights reserved.
-            </p>
           </div>
-          <br/>
+          <br />
           <div className="col-lg-2 col-md-6">
             <h5 className="text-white mb-3">Quick links</h5>
             <ul className="list-unstyled text-muted">
@@ -38,6 +35,9 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            <p className="small">
+              &copy; Copyrights. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
