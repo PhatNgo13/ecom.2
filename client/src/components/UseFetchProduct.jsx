@@ -14,7 +14,7 @@ const UseFetchProduct = () => {
   useEffect(() => {
     const fetchAllalbums = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/all/albums");
+        const res = await axios.get("/all/albums");
         console.log(res);
         setAlbums(res.data);
         setFiltered(res.data);
